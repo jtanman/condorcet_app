@@ -7,9 +7,10 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-direction: column;
-
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
 
@@ -27,13 +28,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 64px;
+    padding-bottom: 32px;
     gap: 8px;
-}
-
-.main {
-    display: flex;
-    flex: 1 1 auto;
 }
 
 .header h1 {
@@ -46,13 +42,15 @@ body {
 .nav {
     margin: 0 0;
     text-align: center;
-    text-wrap: nowrap;
 }
 
 .nav ul {
     padding: 0;
     display: flex;
     gap: 1em;
+    flex; 1 1 auto;
+    word-break: break-word;
+    flex-wrap: wrap;
 }
 
 .nav ul li a {
@@ -64,8 +62,12 @@ body {
     color: #007BFF;
 }
 
-/* Style the intro content area */
-
+/* Style the main content area */
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
 
 /* Style the footer */
 .footer {
