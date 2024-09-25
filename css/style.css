@@ -154,6 +154,25 @@ body {
     height: 200px;
 }
 
+.section-3 {
+    background-color: #E5E7EB;
+}
+
+.section-3 .quote {
+    color: #1F2937;
+    font-size: 36px;
+    /* font-weight: lighter; */
+    font-style: italic;
+}
+
+.section-3 .quote-author {
+    color: #1F2937;
+    font-size: 18x;
+    font-weight: 900;
+    text-align: right;
+}
+
+
 /* Style the footer */
 .footer {
     text-align: center;
